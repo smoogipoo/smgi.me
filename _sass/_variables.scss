@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
+
+$light-grey: #e2e2e2;
+$mid-grey: #484848;
+$dark-grey: #3a3a3a;
+$brand-color: #2ab6ef;
+
+$base-font-family: 'Lato', sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 400;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.5;
+$spacing-unit: 30px;
+$text-color: $light-grey;
+
+// Width of the content area
+$content-width: 1000px;
+$max-width: 1920px;
+$laptop: 1440px;
+$tablet: 1024px;
+$mobile: 767px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
