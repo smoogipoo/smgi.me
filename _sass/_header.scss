@@ -1,0 +1,25 @@
+header {
+    &.site-header {
+        div {
+            &.inner-nav {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+
+                a {
+                    &.site-title {
+                        width: 200px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
