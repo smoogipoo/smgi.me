@@ -1,25 +1,21 @@
 <header class="site-header">
 
-  	<div class="wrapper">
+  	<div class="inner-nav">
 
-		<div class="inner-nav">
+		<a class="site-title" href="{{ site.baseurl }}/"><img src="/assets/logo.svg" width="450" height="75" /></a>
 
-			<a class="site-title" href="{{ site.baseurl }}/"><img src="/assets/logo.svg" width="450" height="75" /></a>
+		<nav class="my-site-nav">
 
-			<nav class="my-site-nav">
+			{% for nav in site.data.nav %}
+			{% if nav.title == page.title %}
+				<a class="page-link active" href="{{ nav.url }}">{{ nav.title }}</a>
+			{% else %}
+				<a class="page-link" href="{{ nav.href }}">{{ nav.title }}</a>
+			{% endif %}
+			{% endfor %}
 
-				{% for nav in site.data.nav %}
-				{% if nav.title == page.title %}
-					<a class="page-link active" href="{{ nav.url }}">{{ nav.title }}</a>
-				{% else %}
-					<a class="page-link" href="{{ nav.href }}">{{ nav.title }}</a>
-				{% endif %}
-				{% endfor %}
+		</nav>
 
-			</nav>
-
-		</div>
-
-  	</div>
+	</div>
 
 </header>
