@@ -23,5 +23,16 @@ code {
 }
 
 body {
-	background-color: $dark-grey;
+	background-color: $mid-grey;
+}
+
+div {
+	&.page-content {
+		padding: 4rem 0;
+		background-color: $dark-grey;
+
+        @include media-query($tablet) {
+            padding: 1rem 0;
+        }
+	}
 }
