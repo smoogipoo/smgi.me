@@ -25,7 +25,7 @@ github_username:  smoogipooo
 pagination:
   enabled: true
   collection: posts
-  per_page: 4
+  per_page: 6
 # Build settings
 markdown: kramdown
 sass:
