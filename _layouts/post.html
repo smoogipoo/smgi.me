@@ -35,17 +35,16 @@ layout: default
 
   </header>
 
-  <div class="post-content editable" itemprop="articleBody" data-cms-content-wrapper="/_layouts/post.html">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+
 
   <div class="next-prev">
     {% if page.previous.url %}
       <a class="prev" href="{{page.previous.url}}">Prev</a>
     {% endif %}
-    {% if page.previous.url or page.next.url %}
-      <a class="all" href="/blog/">All</a>
-    {% endif %}
+  
     {% if page.next.url %}
       <a class="next" href="{{page.next.url}}">Next</a>
     {% endif %}

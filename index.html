@@ -1,10 +1,11 @@
 ---
 layout: default
+title: Home
 pagination:
   enabled: true
   collection: posts
   sort_reverse: true
-  permalink: '/:title/'
+  permalink: '/posts/:num/'
 ---
 
 <section class="post-list">
@@ -25,3 +26,17 @@ pagination:
     </article>
   {% endfor %}
   </section>
+
+<!-- Pagination links -->
+<div class="next-prev">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
+    {% else %}
+        <a class="prev disabled">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+        <a class="next disabled">Next</a>
+    {% endif %}
+</div>
