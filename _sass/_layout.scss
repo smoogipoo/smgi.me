@@ -6,12 +6,17 @@
 }
 
 a {
-    color: $light-grey;
+	color: $brand-color;
+	text-decoration: none;
 
+	&:visited {
+		color: $brand-color;
+	}
 
-    &:visited {
-        color: $light-grey;
-    }
+	&:hover {
+		color: $brand-color;
+		text-decoration: underline;
+	}
 }
 
 pre,
