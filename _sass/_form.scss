@@ -22,7 +22,8 @@ textarea {
 	font-size: 1rem;
 	margin-bottom: 1rem;
 	padding: 1rem;
-	border-radius: 5px;
+    border-radius: 5px;
+    color: $light-grey;
 }
 
 input:hover,
@@ -38,6 +39,7 @@ textarea:focus {
 textarea {
     height: 100px;
     margin-bottom: 1rem;
+    color: $light-grey;
 }
 
 input {
