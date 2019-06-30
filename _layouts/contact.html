@@ -10,12 +10,13 @@ layout: default
 
 {{ content }}
 
-<form name="Contact" class="contact-form" accept-charset="UTF-8" action="/thanks.html" method="post" netlify>
+<form name="Contact" class="contact-form" accept-charset="UTF-8" action="/thanks.html" method="post" netlify-honeypot="bot-field" netlify>
+	<input type=hidden name="bot-field" />
 	<input type="text" name="Name" placeholder="Name" required>
 	<input type="email" name="Email" placeholder="Email" required>
 	<input type="text" name="Subject" placeholder="Subject" required>
 	<textarea name="Message" placeholder="Message" rows="15" minlength="50" maxlength="300" required></textarea>
-	<div class="recaptcha" data-netlify-recaptcha></div>
+	<!-- <div class="recaptcha" data-netlify-recaptcha></div> -->
 	<input class="formkeep-send" type="submit" value="Send Message">
 </form>
 
