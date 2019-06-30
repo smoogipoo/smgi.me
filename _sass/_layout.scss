@@ -24,6 +24,14 @@ code {
 
 body {
 	background-color: $mid-grey;
+
+	div {
+		&.wrap {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+	}
 }
 
 div {

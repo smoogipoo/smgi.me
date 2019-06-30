@@ -20,6 +20,16 @@ header {
                         }
                     }
                 }
+
+                nav {
+                    &#smgi-menu {
+                        a {
+                            &.page-link {
+                                height: 88px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

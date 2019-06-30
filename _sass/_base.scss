@@ -125,7 +125,9 @@ a {
   */
 blockquote {
 	padding: 2rem;
-	margin-bottom: 0;
+	margin: 2rem 0;
+	background: darken($dark-grey, 5);
+	border-radius: 5px;
 
 	> :last-child {
 		margin-bottom: 0;

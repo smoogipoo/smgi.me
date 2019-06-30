@@ -4,17 +4,24 @@
 
 		<a class="site-title" href="{{ site.baseurl }}/"><img src="/assets/logo.svg" width="450" height="75" /></a>
 
-		<nav class="my-site-nav">
-
+		<nav id="smgi-menu" class="my-site-nav">
+			<ul>
 			{% for nav in site.data.nav %}
 			{% if nav.title == page.title %}
-				<a class="page-link active" href="{{ nav.url }}">{{ nav.title }}</a>
+				<li><a class="page-link active" href="{{ nav.url }}">{{ nav.title }}</a></li>
 			{% else %}
-				<a class="page-link" href="{{ nav.href }}">{{ nav.title }}</a>
+				<li><a class="page-link" href="{{ nav.href }}">{{ nav.title }}</a></li>
 			{% endif %}
 			{% endfor %}
+			</ul>
 
 		</nav>
+
+		<button class="mmenu-button hamburger hamburger--slider" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
 
 	</div>
 
