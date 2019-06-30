@@ -2,13 +2,21 @@
 layout: default
 ---
 
+<article class="post">
+
+<header class="post-header">
+	<h1 class="post-title">{{ page.title }}</h1>
+</header>
+
 {{ content }}
 
 <form name="Contact" class="contact-form" accept-charset="UTF-8" action="/thanks.html" method="post" netlify>
-	<input type="text" name="Name" placeholder="Enter your name here." required>
-	<input type="email" name="Email" placeholder="Then your email here, make sure it’s valid." required>
-	<textarea name="Message" placeholder="Finally, your message goes here. " rows="15" minlength="50" maxlength="300" required></textarea>
-	<div class="send">
-		<input class="send" type="submit" value="Send Message">
-	</div>
+	<input type="text" name="Name" placeholder="Name" required>
+	<input type="email" name="Email" placeholder="Email" required>
+	<input type="text" name="Subject" placeholder="Subject" required>
+	<textarea name="Message" placeholder="Message" rows="15" minlength="50" maxlength="300" required></textarea>
+	<div class="recaptcha" data-netlify-recaptcha></div>
+	<input class="formkeep-send" type="submit" value="Send Message">
 </form>
+
+</article>
