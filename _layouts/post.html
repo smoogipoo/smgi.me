@@ -20,16 +20,6 @@ layout: default
         {{ page.date | date: "%Y" }}
       </time>
 
-      {% if page.author %}
-        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span itemprop="name">{{ page.author }}</span>
-        </span>
-      {% endif %}
-
-      {% if page.tags %}
-        <i style="display:inline-block; margin:0 5px;" class="fa fa-tags" aria-hidden="true"></i>
-        {{ page.tags | join: ', ' }}
-      {% endif %}
 
     </p>
 
