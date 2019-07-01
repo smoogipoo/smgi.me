@@ -46,7 +46,11 @@ article {
                         font-weight: 300;
                     }
                 }
-			}
+            }
+            
+            &.utterances {
+                max-width: 700px;
+            }
 		}
 
 		div {
