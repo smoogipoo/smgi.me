@@ -6,15 +6,14 @@
 
 		<nav id="smgi-menu" class="my-site-nav">
 			<ul>
-			{% for nav in site.data.nav %}
-			{% if nav.title == page.title %}
-				<li><a class="page-link active" href="{{ nav.url }}">{{ nav.title }}</a></li>
-			{% else %}
-				<li><a class="page-link" href="{{ nav.href }}">{{ nav.title }}</a></li>
-			{% endif %}
-			{% endfor %}
+				{% for nav in site.data.nav %}
+					{% if nav.title == page.title %}
+						<li><a class="page-link active" href="{{ nav.url }}">{{ nav.title }}</a></li>
+					{% else %}
+						<li><a class="page-link" href="{{ nav.href }}">{{ nav.title }}</a></li>
+					{% endif %}
+				{% endfor %}
 			</ul>
-
 		</nav>
 
 		<button class="mmenu-button hamburger hamburger--slider" type="button">

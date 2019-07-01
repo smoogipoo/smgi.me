@@ -1,5 +1,26 @@
-#mm-smgi-menu:not(.mm-menu) {
-	display: none;
+
+@media (min-width: 768px) {
+	#smgi-menu {
+		display: flex;
+	}
+
+	button.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: $mobile) {
+	#mm-smgi-menu:not(.mm-menu) {
+		display: none;
+	}
+
+	#smgi-menu {
+		display: none;
+	}
+
+	button.hamburger {
+		display: flex;
+	}
 }
 
 .mm-panels {
@@ -35,7 +56,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 88px;
+	height: 82px;
 	background: $dark-grey;
 }
 
@@ -53,11 +74,11 @@
 }
 
 .mm-panel_has-navbar {
-	padding-top: 88px;
+	padding-top: 82px;
 }
 
 .mm-navbars_top {
-    border-bottom-width: 0;
+	border-bottom-width: 0;
 }
 
 .mm-panel,
@@ -70,16 +91,16 @@
 }
 
 .mm-navbar__title {
-    font-size: 2rem;
-    font-weight: 300;
+	font-size: 2rem;
+	font-weight: 300;
 }
 
 .mm-listitem:after {
-    display: none;
+	display: none;
 }
 
 .mm-listitem {
-    &:hover {
-        background: darken($dark-grey, 15);
-    }
+	&:hover {
+		background: darken($dark-grey, 15);
+	}
 }

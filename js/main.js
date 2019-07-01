@@ -21,6 +21,11 @@ var $menu = $('#smgi-menu').mmenu(
             }
         ]
         // options
+    },
+    {
+        offCanvas: {
+            clone: true
+        }
     }
 );
 
