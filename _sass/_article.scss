@@ -50,6 +50,11 @@ article {
             
             &.utterances {
                 max-width: 700px;
+                margin-top: 4rem;
+
+                @include media-query($mobile) {
+                    margin-top: 2rem;
+                }
             }
 		}
 
