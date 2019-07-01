@@ -22,6 +22,10 @@ div {
             transition: 0.2s background ease;
             color: $light-grey;
 
+            @include media-query($mobile) {
+                width: calc(50% - 2.6rem);
+            }
+
             &:hover {
                 background: darken($dark-grey, 5);
             }
