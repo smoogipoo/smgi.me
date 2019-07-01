@@ -33,11 +33,7 @@ header {
 
                             li {
                                 display: inline-flex;
-                                padding: 1rem;
-
-                                &:last-of-type {
-                                    padding: 1rem 0 1rem 1rem;
-                                }
+                                padding: 1rem 0 1rem 1rem;
 
                                 a {
                                     &.page-link {
