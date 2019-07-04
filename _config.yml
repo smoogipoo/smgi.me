@@ -20,8 +20,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Smoogipoo is awesome!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://smgi.me" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: smoogipooo
-github_username:  smoogipooo
+twitter_username: smoogipoo
+github_username:  smoogipoo
 pagination:
   enabled: true
   collection: posts
