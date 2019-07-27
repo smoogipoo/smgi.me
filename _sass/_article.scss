@@ -1,15 +1,15 @@
 article {
-	&.post {
-		header {
-			&.post-header {
+    &.post {
+        header {
+            &.post-header {
                 margin-bottom: 4rem;
-                
+
                 @include media-query($mobile) {
                     margin-bottom: 2rem;
                 }
 
-				h1 {
-					&.post-title {
+                h1 {
+                    &.post-title {
                         font-size: 4rem;
                         line-height: 4rem;
                         font-weight: 300;
@@ -21,22 +21,23 @@ article {
                             line-height: 2rem;
                             margin-bottom: 2rem;
                         }
-                        
+
                     }
                 }
-                
+
                 p {
                     &.post-meta {
                         margin-bottom: 0;
                         text-align: center;
                     }
                 }
-			}
-		}
-		div {
-			&.post-content {
-				max-width: 700px;
-                margin: 0 auto;
+            }
+        }
+
+        div {
+            &.post-content {
+                max-width: 700px;
+                margin: 10 auto;
 
                 h1,
                 h2,
@@ -47,7 +48,7 @@ article {
                     margin-bottom: 1rem;
                     margin-top: 2rem;
                 }
-                
+
                 blockquote {
                     p {
                         color: white;
@@ -58,7 +59,7 @@ article {
                     }
                 }
             }
-            
+
             &.utterances {
                 max-width: 700px;
                 margin-top: 4rem;
@@ -67,17 +68,25 @@ article {
                     margin-top: 2rem;
                 }
             }
-		}
+        }
 
-		div {
-			&.next-prev {
-				max-width: 700px;
+        img {
+            &.post-feature-image {
+                max-width: 50%;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        div {
+            &.next-prev {
+                max-width: 700px;
                 margin: 4rem auto 0;
-                
+
                 @include media-query($mobile) {
                     margin: 2rem auto 0;
                 }
-			}
-		}
-	}
+            }
+        }
+    }
 }

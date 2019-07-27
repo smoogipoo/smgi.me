@@ -8,15 +8,15 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      <!-- Whitespace added for readability -->
+        <!-- Whitespace added for readability -->
         {% assign d = page.date | date: "%-d"  %}
         {{ page.date | date: "%B" }}
         {% case d %}
-          {% when '1' or '21' or '31' %}{{ d }}st
-          {% when '2' or '22' %}{{ d }}nd
-          {% when '3' or '23' %}{{ d }}rd
-          {% else %}{{ d }}th
-          {% endcase %},
+        {% when '1' or '21' or '31' %}{{ d }}st
+        {% when '2' or '22' %}{{ d }}nd
+        {% when '3' or '23' %}{{ d }}rd
+        {% else %}{{ d }}th
+        {% endcase %},
         {{ page.date | date: "%Y" }}
       </time>
 
@@ -25,28 +25,25 @@ layout: default
 
   </header>
 
+  <img class="post-feature-image" src="{{ page.feature_image_path }}" />
+
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
 
-  <script src="https://utteranc.es/client.js"
-    repo="markorapaic/smgi.me"
-    issue-term="pathname"
-    label="Comment"
-    theme="github-dark"
-    crossorigin="anonymous"
-    async>
+  <script src="https://utteranc.es/client.js" repo="smoogipoo/smgi.me" issue-term="pathname" label="Comment"
+    theme="github-dark" crossorigin="anonymous" async>
   </script>
 
 
   <div class="next-prev">
     {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">Prev</a>
+    <a class="prev" href="{{page.previous.url}}">Prev</a>
     {% endif %}
-  
+
     {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">Next</a>
+    <a class="next" href="{{page.next.url}}">Next</a>
     {% endif %}
   </div>
 
