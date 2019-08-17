@@ -13,10 +13,12 @@ section {
 			justify-content: space-between;
 			align-items: flex-start;
             margin-bottom: 2rem;
+            max-height: 150px;
 
             @include media-query($mobile) {
                 flex-direction: column;
                 margin-bottom: 4rem;
+                max-height: inherit;
             }
 
             &:last-of-type {
@@ -33,10 +35,11 @@ section {
 				}
 
 				&.content {
-                    width: calc((100% - 215px) - 2rem);
+                    padding-left: 2rem;
+                    max-width: calc((100% - 215px) - 2rem);
 
                     @include media-query($mobile) {
-                        width: 100%;
+                        max-width: calc(100% - 4rem);
                     }
 
 					a {
@@ -49,27 +52,19 @@ section {
                             @include media-query($mobile) {
                                 margin-top: 1rem;
                             }
-						}
+                        }
 					}
 
 					p {
-						margin: 0;
+                        margin: 0;
 
 						&.post-meta {
-							font-size: 0.75rem;
-                            margin: 0.5rem 0;
-
-                            @include media-query($mobile) {
-                                margin: 0.5rem 0 1rem;
-                            }
+                            font-size: 0.75rem;
+                            margin: 0 0 1rem;
                         }
 
                         &.post-excerpt {
                             display: block;
-
-                            @include media-query($mobile) {
-                                display: none;
-                            }
                         }
 					}
 				}
