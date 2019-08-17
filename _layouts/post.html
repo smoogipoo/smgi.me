@@ -38,13 +38,8 @@ layout: default
 
 
   <div class="next-prev">
-    {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">Prev</a>
-    {% endif %}
-
-    {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">Next</a>
-    {% endif %}
+    <a class="prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}">Prev</a>
+    <a class="next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next</a>
   </div>
 
 </article>
