@@ -16,7 +16,7 @@ section {
 
             @include media-query($mobile) {
                 flex-direction: column;
-                margin-bottom: 1rem;
+                margin-bottom: 4rem;
             }
 
             &:last-of-type {
