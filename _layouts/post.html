@@ -24,11 +24,11 @@ layout: default
             </time>
         </p>
     </header>
-    <img class="post-feature-image" src="{{ page.feature_image_path }}"/>
+    <img class="post-cover" src="{{ page.cover }}"/>
     <div class="post-content" itemprop="articleBody">
         {{ content }}
     </div>
-    <script async crossorigin="anonymous" issue-term="pathname" label="Comment" repo="smoogipoo/smgi.me" src="https://utteranc.es/client.js" theme="github-dark"></script>
+    <script async crossorigin="anonymous" issue-term="pathname" label="comment" repo="smoogipoo/smgi.me" src="https://utteranc.es/client.js" theme="github-dark"></script>
     <div class="next-prev">
         <a class="prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}">Prev</a>
         <a class="next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next</a>
