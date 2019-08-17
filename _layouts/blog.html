@@ -20,11 +20,7 @@ pagination:
                     </h2>
                 </a>
                 <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-                <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 30 }}
-                    <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Read More
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                </p>
+                <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 30 }}</p>
             </div>
         </article>
     {% endfor %}
