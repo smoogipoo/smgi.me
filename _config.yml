@@ -26,6 +26,7 @@ pagination:
   enabled: true
   collection: posts
   per_page: 6
+logo: /assets/logo.svg
 # Build settings
 markdown: kramdown
 highlighter: rouge
