@@ -19,14 +19,12 @@ footer {
 						flex-direction: row;
 						li {
 							list-style-type: none;
-                            margin: 0 2rem;
                             display: flex;
-                            flex-direction: row;
+							flex-direction: row;
 
-                            &:first-of-type,
-                            &:last-of-type {
-                                margin: 0;
-                            }
+							&:not(:first-of-type) {
+								margin-left: 2rem;
+							}
 
 							a {
 								display: inline-flex;
