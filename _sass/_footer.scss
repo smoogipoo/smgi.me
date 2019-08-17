@@ -1,29 +1,22 @@
 footer {
 	&.site-footer {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        background: $mid-grey;
 
 		div {
 			&.wrapper {
 				ul {
 					&.social-list {
 						list-style: none;
-						padding: 0;
-						margin: 0 auto;
+						margin: 0;
 						display: flex;
 						flex-direction: row;
+
 						li {
 							list-style-type: none;
-                            display: flex;
-							flex-direction: row;
+							padding: .5rem;
 
-							&:not(:first-of-type) {
-								margin-left: 2rem;
+							&:hover {
+								background-color: $dark-grey;
 							}
 
 							a {
