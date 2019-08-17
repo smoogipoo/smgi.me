@@ -33,6 +33,11 @@ body {
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
+
+			&.home {
+				height: 100vh;
+				justify-content: center;
+			}
 		}
 	}
 }
