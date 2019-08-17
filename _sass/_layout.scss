@@ -42,7 +42,7 @@ div {
 		padding: 4rem 0;
 		background-color: $dark-grey;
 
-        @include media-query($tablet) {
+        @include media-query($mobile) {
             padding: 1rem 0;
         }
 	}
