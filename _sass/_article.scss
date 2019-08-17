@@ -2,24 +2,16 @@ article {
     &.post {
         header {
             &.post-header {
-                margin-bottom: 4rem;
-
-                @include media-query($mobile) {
-                    margin-bottom: 2rem;
-                }
-
                 h1 {
                     &.post-title {
                         font-size: 4rem;
                         line-height: 4rem;
                         font-weight: 300;
-                        margin-bottom: 4rem;
                         text-align: center;
 
                         @include media-query($mobile) {
                             font-size: 2rem;
                             line-height: 2rem;
-                            margin-bottom: 2rem;
                         }
 
                     }
@@ -36,9 +28,7 @@ article {
 
         div {
             &.post-content {
-                max-width: 700px;
-                margin: 10 auto;
-
+                max-width: 100%;
                 h1,
                 h2,
                 h3,
@@ -61,7 +51,7 @@ article {
             }
 
             &.utterances {
-                max-width: 700px;
+                max-width: 100%;
                 margin-top: 4rem;
 
                 @include media-query($mobile) {
@@ -75,6 +65,14 @@ article {
                 max-width: 50%;
                 display: block;
                 margin: auto;
+
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+
+                @include media-query($mobile) {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                }
             }
         }
 
