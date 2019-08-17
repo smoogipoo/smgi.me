@@ -13,7 +13,7 @@ section {
 			justify-content: space-between;
 			align-items: flex-start;
             margin-bottom: 2rem;
-            
+
             @include media-query($mobile) {
                 flex-direction: column;
                 margin-bottom: 1rem;
@@ -26,7 +26,7 @@ section {
 			div {
 				&.image {
                     width: 215px;
-                    
+
                     @include media-query($mobile) {
                         width: 100%;
                     }
@@ -34,7 +34,7 @@ section {
 
 				&.content {
                     width: calc((100% - 215px) - 2rem);
-                    
+
                     @include media-query($mobile) {
                         width: 100%;
                     }
@@ -45,7 +45,7 @@ section {
 
 						h2 {
                             margin: 0;
-                            
+
                             @include media-query($mobile) {
                                 margin-top: 1rem;
                             }
@@ -58,12 +58,12 @@ section {
 						&.post-meta {
 							font-size: 0.75rem;
                             margin: 0.5rem 0;
-                            
+
                             @include media-query($mobile) {
                                 margin: 0.5rem 0 1rem;
                             }
                         }
-                        
+
                         &.post-excerpt {
                             display: block;
 

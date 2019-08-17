@@ -9,23 +9,27 @@ pagination:
 ---
 
 <section class="post-list">
-  {% for post in paginator.posts %}
-    <article>
-      <div class="image">
-        <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-list-feature-image" src="{{ post.feature_image_path }}" alt="{{ post.title }}" /></a>
-      </div>
-      <div class="content">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          <h2>
-            {{ post.title }}
-          </h2>
-        </a>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 30 }} <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Read More <i class="fa fa-chevron-right"></i></a></p>
-      </div>
-    </article>
-  {% endfor %}
-  </section>
+    {% for post in paginator.posts %}
+        <article>
+            <div class="image">
+                <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-list-feature-image" src="{{ post.feature_image_path }}" alt="{{ post.title }}"/></a>
+            </div>
+            <div class="content">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                </a>
+                <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+                <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' | truncatewords: 30 }}
+                    <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Read More
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </p>
+            </div>
+        </article>
+    {% endfor %}
+</section>
 
 <!-- Pagination links -->
 <div class="next-prev">

@@ -3,43 +3,34 @@ layout: default
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        <!-- Whitespace added for readability -->
-        {% assign d = page.date | date: "%-d"  %}
-        {{ page.date | date: "%B" }}
-        {% case d %}
-        {% when '1' or '21' or '31' %}{{ d }}st
-        {% when '2' or '22' %}{{ d }}nd
-        {% when '3' or '23' %}{{ d }}rd
-        {% else %}{{ d }}th
-        {% endcase %},
-        {{ page.date | date: "%Y" }}
-      </time>
-
-
-    </p>
-
-  </header>
-
-  <img class="post-feature-image" src="{{ page.feature_image_path }}" />
-
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-
-
-  <script src="https://utteranc.es/client.js" repo="smoogipoo/smgi.me" issue-term="pathname" label="Comment"
-    theme="github-dark" crossorigin="anonymous" async>
-  </script>
-
-
-  <div class="next-prev">
-    <a class="prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}">Prev</a>
-    <a class="next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next</a>
-  </div>
-
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                <!-- Whitespace added for readability -->
+                {% assign d = page.date | date: "%-d"  %}
+                {{ page.date | date: "%B" }}
+                {% case d %}
+                    {% when '1' or '21' or '31' %}
+                        {{ d }}st
+                    {% when '2' or '22' %}
+                        {{ d }}nd
+                    {% when '3' or '23' %}
+                        {{ d }}rd
+                    {% else %}
+                        {{ d }}th
+                {% endcase %},
+                {{ page.date | date: "%Y" }}
+            </time>
+        </p>
+    </header>
+    <img class="post-feature-image" src="{{ page.feature_image_path }}"/>
+    <div class="post-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+    <script async crossorigin="anonymous" issue-term="pathname" label="Comment" repo="smoogipoo/smgi.me" src="https://utteranc.es/client.js" theme="github-dark"></script>
+    <div class="next-prev">
+        <a class="prev {% unless page.previous.url %}disabled{% endunless %}" href="{{page.previous.url}}">Prev</a>
+        <a class="next {% unless page.next.url %}disabled{% endunless %}" href="{{page.next.url}}">Next</a>
+    </div>
 </article>
