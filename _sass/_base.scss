@@ -86,7 +86,8 @@ ol {
 
 li {
 	> ul,
-	> ol {
+	> ol,
+	> p {
 		margin-bottom: 0;
 	}
 }
