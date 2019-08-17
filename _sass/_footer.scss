@@ -26,13 +26,13 @@ footer {
 								margin-left: 2rem;
 							}
 
-							i {
-								color: #fff;
-							}
-
 							a {
 								display: inline-flex;
 								text-decoration: none;
+
+								i {
+									color: $light-grey;
+								}
 							}
 						}
 					}
