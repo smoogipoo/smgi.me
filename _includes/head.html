@@ -10,11 +10,11 @@
     </title>
 
     {% if page.cover %}
-        <meta content="{{ page.cover }}" property="og:image">
-        <meta name="twitter:image:src" content="{{ page.cover }}">
+        <meta content="{{ site.url }}{{ site.baseurl }}{{ page.cover }}" property="og:image">
+        <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}{{ page.cover }}">
     {% else %}
-        <meta name="twitter:image:src" content="{{ site.logo }}">
-        <meta content="{{ site.logo }}" property="og:image">
+        <meta content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" property="og:image">
+        <meta name="twitter:image:src" content="{{ site.url }}{{ site.baseurl }}{{ site.logo }}">
     {% endif %}
 
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
