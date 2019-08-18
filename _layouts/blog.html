@@ -10,7 +10,7 @@ pagination:
 <section class="post-list">
     {% for post in paginator.posts %}
         <article>
-            <div class="image">
+            <div class="cover">
                 <a href="{{ post.url | prepend: site.baseurl }}"><img class="post-list-cover" src="{{ post.cover }}" alt="{{ post.title }}"/></a>
             </div>
             <div class="content">

@@ -26,7 +26,7 @@ section {
             }
 
 			div {
-				&.image {
+				&.cover {
                     width: 215px;
 
                     @include media-query($mobile) {
