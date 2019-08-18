@@ -8,6 +8,15 @@
             {{ page.title | escape }}{% else %}Uh oh...
         {% endif %}
     </title>
+
+    {% if page.cover %}
+        <meta content="{{ page.cover }}" property="og:image">
+        <meta name="twitter:image:src" content="{{ page.cover }}">
+    {% else %}
+        <meta name="twitter:image:src" content="{{ site.logo }}">
+        <meta content="{{ site.logo }}" property="og:image">
+    {% endif %}
+
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link href="/favicon.png" rel="icon" sizes="194x194" type="image/png">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}">
