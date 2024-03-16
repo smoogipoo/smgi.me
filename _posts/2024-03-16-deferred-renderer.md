@@ -1,11 +1,12 @@
 ---
 title: Deferred rendering? ...what's that?
 cover: /assets/of-deferred-rendering-header.png
+no_header: true
 ---
 
 The next release of osu! will feature a set of "experimental" renderers. You should definitely try them out and report back on your experiences!
 
-![Settings](/assets/of-experimental-renderers.png)
+![Settings](/assets/of-experimental-renderers-2.png)
 
 - D3D11 (Experimental)
   - Windows users should prefer this over all other options.

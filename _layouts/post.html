@@ -24,7 +24,10 @@ layout: default
             </time>
         </p>
     </header>
-    <img class="post-cover" src="{{ page.cover }}"/>
+    <hr />
+    {% if page.no_header != true %}
+        <img class="post-cover" src="{{ page.cover }}"/>
+    {% endif %}
     <div class="post-content" itemprop="articleBody">
         {{ content }}
     </div>

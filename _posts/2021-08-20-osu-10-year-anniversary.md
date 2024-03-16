@@ -1,6 +1,7 @@
 ---
 title: 10 years of osu!
 cover: /assets/osu-10-year.png
+no_header: true
 ---
 
 It's hard to believe that I've been involved in this game in one way or another for 10 years now. During highschool I was a player and made tools for it, in university I joined the team and started working on it, and now I'm employed and have embraced all of this as part of my responsibility.
