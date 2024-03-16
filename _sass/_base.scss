@@ -108,11 +108,11 @@ h6 {
   * Links
   */
 a {
-	color: $brand-color;
+	color: $smgi-blue;
 	text-decoration: none;
 
 	&:visited {
-		color: darken($brand-color, 15%);
+		color: darken($smgi-blue, 15%);
 	}
 
 	&:hover {
