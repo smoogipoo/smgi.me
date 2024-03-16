@@ -27,7 +27,7 @@ figure {
 body {
 	font: $base-font-weight #{$base-font-size}/#{$base-line-height}
 		$base-font-family;
-	color: $text-color;
+	color: $base-text-color;
 	background-color: $dark-grey;
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-feature-settings: "kern" 1;
@@ -101,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: $base-font-weight;
+	color: $smgi-yellow;
 }
 
 /**
@@ -116,7 +116,7 @@ a {
 	}
 
 	&:hover {
-		color: $text-color;
+		color: $base-text-color;
 		text-decoration: underline;
 	}
 }
